@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Cards, CountryPicker, Chart } from "./components";
+import { Cards, CountryPicker } from "./components";
 import { fetchData } from "./api/";
 import styles from "./App.module.css";
 
@@ -25,19 +25,20 @@ class App extends React.Component {
   };
 
   render() {
-    const { data, country } = this.state;
+    const { data } = this.state;
 
     return (
       <div className={styles.container}>
-        <h1>COViD Tracker App by Faisal</h1>
-        {new Date(data.lastUpdate).toDateString()}
-        {/* <img className={styles.image} src={image} alt="COVID-19" /> */}
+        <h1>COVID Tracker App by Faisal</h1>
+        <h3 classname={styles.date}>
+          {new Date(data.lastUpdate).toDateString()}
+        </h3>
+
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} />
       </div>
     );
   }
 }
-
+// new file
 export default App;

@@ -12,13 +12,22 @@
 .infected {
   border-bottom: 10px solid rgba(0, 0, 255, 0.5);
 }
+.infected:hover {
+  background: lightpink;
+}
 
 .recovered {
   border-bottom: 10px solid rgba(0, 255, 0, 0.5);
 }
+.recovered:hover {
+  background: lightpink;
+}
 
 .deaths {
   border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+.deaths:hover {
+  background: lightpink;
 }
 
 @media only screen and (max-width: 770px) {

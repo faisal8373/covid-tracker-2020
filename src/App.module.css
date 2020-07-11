@@ -1,11 +1,16 @@
 body {
-  background-color: rgb(250, 250,250);
+  background-color: rgb(250, 250, 250);
 }
 
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+h3:hover {
+  color: grey;
+  font-weight: bold;
+  font-size: larger;
 }
 
 .image {
